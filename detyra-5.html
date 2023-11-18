@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detyra 5</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: rgba(14, 14, 51, 0.938)
+        }
+
+        h1 {
+            color: #FFD28F;
+            text-align: center;
+            margin-top: 50px;
+            margin-bottom: 20px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+        }
+
+        .form {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            text-align: left;
+            background-color: #FFE3BB;
+            border: 2px solid #fab958;
+            border-radius: 20px;
+            padding: 20px;
+            width: 300px;
+            margin-top: 50px;
+        }
+
+        .content {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center; 
+        }
+
+        .label {
+            min-width: 80px; 
+            font-weight: bold;
+            color: black;
+        }
+
+        .user-input {
+            color: rgba(14, 14, 51, 0.938);
+            flex: 1;
+            word-wrap: break-word;
+        }
+
+        .button-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        button {
+            padding: 10px;
+            font-size: 12px;
+            font-weight: bold;
+            background-color: #f8b146;
+            color: #ffff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #f8a529;
+        }
+
+        .gif-container {
+            margin-top: 40px;
+        }
+        img{
+            width: 100px;
+            height: 85px;
+            border-radius: 50%;
+        }
+        .clickable-gif {
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Forma për regjistrim</h1>
+    <div class="form">
+        <div class="content">
+            <div class="label">Emri</div>
+            <div class="user-input" id="emri"></div>
+        </div>
+        
+        <div class="content">
+            <div class="label">Mbiemri</div>
+            <div class="user-input" id='mbiemri'></div>
+        </div>
+        <div class="content">
+            <div class="label">Mosha</div>
+            <div class="user-input" id='mosha'></div>
+        </div>
+        <div class="content">
+            <div class="label">Emaili</div>
+            <div class="user-input" id='emaili'></div>
+        </div>
+        <div class="content">
+            <div class="label">Adresa</div>
+            <div class="user-input" id='adresa'></div>
+        </div>
+
+        <div class="button-container">
+            <button id="saveButton" >
+                Click to save your data
+            </button>
+        </div>
+    </div>
+
+    <div class="gif-container">
+        <img src="bell2.gif" alt="Click me!" class="clickable-gif">
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
